@@ -1,0 +1,17 @@
+# 로그인화면
+	
+	요청내용	:	/touhou/login.touhou
+	파라미터	:	무
+	컨트롤러	:	com.test01.touhou.controller.MemberController
+	처리함수	:	login
+	   뷰		:	/WEB-INF/views/login.tohou
+---------------------------------------------------------------------------------
+# 로그인처리
+	
+	요청내용	:	/touhou/loginProc.touhou
+	파라미터	:	id, pw
+	컨트롤러	:	com.test01.touhou.controller.MemberController
+	처리함수	:	loginProc
+	   뷰		:	성공 -	/WEB-INF/views/board.touhou
+	   				실패 - 	/WEB-INF/views/login.touhou(리다이렉트)
+---------------------------------------------------------------------------------

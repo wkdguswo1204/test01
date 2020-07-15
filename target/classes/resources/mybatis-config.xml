@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+			PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+					"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+	<settings>
+	 	<setting name="cacheEnabled" value="false"/>
+	 	<setting name="useGeneratedKeys" value="true" />
+	 	<setting name="defaultExecutorType" value="REUSE" />
+	 </settings>
+	 
+	  <typeAliases>
+	 	<typeAlias alias="mVO" type="com.test01.touhou.vo.MemberVO" />
+	 	<typeAlias alias="bvo" type="com.test01.touhou.vo.BoardVO" />
+
+	 	</typeAliases>
+	 	
+	 	<mappers>
+		  	<mapper resource="com/test01/touhou/sql/MemberSQL.xml" />
+		  	<mapper resource="com/test01/touhou/sql/BoardSQL.xml" />
+
+	 	</mappers>
+</configuration>
